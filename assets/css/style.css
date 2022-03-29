@@ -145,6 +145,10 @@ h5 span{
     .home-body{
         margin-top: 100px;
     }
+    .explore-box div{
+        width: 35vw;
+        height: 35vw;
+    }
 }
 @media(max-width:704px){
     body{
@@ -180,6 +184,7 @@ h5 span{
     }
     .heading-bar .navigation-toggler-btn[aria-expanded="true"]{
         background-image: url(../shared/icon-close.svg);
+        z-index: 100;
     }
     .heading-bar .active::after,.heading-bar .navigation-bar li a:hover::after{
         display: none;
@@ -190,5 +195,9 @@ h5 span{
     }
     .home-body{
         margin-top: 20px;
+    }
+    .explore-box div{
+        width: 45vw;
+        height: 45vw;
     }
 }

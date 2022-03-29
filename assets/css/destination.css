@@ -133,4 +133,7 @@ body{
     .destination-category p::after{
         width: 99%;
     }
+    .destination-category ul{
+        padding-left: 0;
+    }
 }
