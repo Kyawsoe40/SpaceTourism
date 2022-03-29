@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/destination.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  
+</head>
+
+<body>
+
+  <nav class="heading-bar">
+    <img src="assets/shared/logo.svg" alt="">
+    
+      <button class="navigation-toggler-btn" aria-controls="navigation-bar" aria-expanded="false"><span class=" sr-only"></span></button>
+      <div> 
+      <ul id="navigation-bar" data-visible="false" class="navigation-bar">
+        <li><a href="index.html" class=" Barlo-condensed-font"><span aria-hidden="true">00</span> Home</a></li>
+        <li><a href="destination-moon.html" class="active Barlo-condensed-font"><span aria-hidden="true">01</span> Destination</a></li>
+        <li><a href="" class="Barlo-condensed-font"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a href="" class="Barlo-condensed-font"><span aria-hidden="true">03</span>Technology</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="destination-body my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 ">
+          <h5 class="Barlo-condensed-font my-5"><span>01</span> Pick your destination</h5>
+          <div class="text-center">
+            <img src="assets/destination/image-moon.webp " class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="destination-category">
+            <ul class="destination-bar">
+              <li><a href="destination-moon.html" class="Barlo-condensed-font active">Moon</a></li>
+              <li><a href="destination-mars.html" class="Barlo-condensed-font">Mars</a></li>
+              <li><a href="destination-europa.html" class="Barlo-condensed-font">Europa</a></li>
+              <li><a href="destination-titan.html" class="Barlo-condensed-font">Titan</a></li>
+            </ul>
+            <h2 class="Bellefair-font">Moon</h2>
+            <p class="Barlo-condensed-font">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+              <div class="destination-time">
+                <div>
+                  <h3 class="Barlo-condensed-font">Avg. distance</h3> 
+                  <h5 class="Bellefair-font">384,400 km</h5>
+                </div>
+                <div>
+                  <h3 class="Barlo-condensed-font">Est. travel time</h3> 
+                  <h5 class="Bellefair-font">3 days</h5>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="assets/js/navbar-toggler.js"></script>
+</html>

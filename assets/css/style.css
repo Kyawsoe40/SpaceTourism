@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+body{
+    background-image: url(../home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+}
+.Barlo-condensed-font{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.Bellefair-font{
+    font-family: 'Bellefair', serif;
+}
+.heading-bar {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.heading-bar .navigation-toggler-btn{
+    display: none;
+}
+.heading-bar img{
+    margin: 2rem 3rem;
+}
+.navigation-bar{
+    display: flex;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+    margin: 0;   
+    padding: 0;
+}
+
+.heading-bar .navigation-bar li{
+    list-style: none;
+    position: relative;
+
+}
+.heading-bar .navigation-bar li a{
+    list-style: none;
+    text-decoration: none;
+    
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2.75px;
+    margin: auto 2rem;
+    position: relative;
+}
+.active{
+    position: relative;
+}
+
+.active::after{
+    position: absolute;
+    content: '';
+    width: 102%;
+    height: 3px;
+    background-color: #fff;
+    top: 3rem;
+    left:-1%;
+}
+.heading-bar .navigation-bar li a span{
+    font-weight: 700;
+}
+
+.heading-bar .navigation-bar li a:hover::after{
+    position: absolute;
+    content: '';
+    width: 102%;
+    height: 3px;
+    background-color: rgba(255,255,255,0.4);
+    top: 3rem;
+    left:-1%;
+
+}
+.heading-bar .navigation-bar li a.active:hover::after{
+    background-color: rgba(255,255,255,1);
+}
+h5{
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4.75px;
+    color: #d0d6f9;
+}
+h5 span{
+    font-size: 12vw;
+    color: #fff;
+}
+.home-body{
+    margin-top: 200px;
+    
+}
+
+
+.text-box p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #d0d6f9;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+.explore-box div{
+    width: 24vw;
+    height: 24vw;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: outline ease-in-out 350ms;
+}
+.explore-box div:hover{
+    outline: 60px solid rgba(255, 255, 255, 0.144);
+}
+.explore-box div h5{
+    font-family: 'Bellefair', serif;
+    color: #0B0D17;
+    text-align: center;
+    margin: auto 0;
+    font-size: 2vw;
+    line-height: 36.67px;
+}
+@media (min-width:705px){
+    .heading-bar .navigation-bar{
+        padding-block: 2rem;
+        padding-inline: clamp(2rem,2vw,8rem);
+    }
+}
+
+@media (min-width:705px) and (max-width:991px){
+    body{
+        background-image: url(../home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+    .heading-bar .navigation-bar li a > span[aria-hidden]{
+        display: none;
+        }
+    .heading-bar .navigation-bar{
+        padding-block: 30px;
+        padding-inline: 20px;
+    }
+    .home-body{
+        margin-top: 100px;
+    }
+}
+@media(max-width:704px){
+    body{
+        background-image: url(../home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+    }
+    .navigation-bar{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh,10rem) 2em;
+        gap: 2em;
+        transform: translateX(100%);
+        transition: all ease-in-out 350ms;
+    }
+    .navigation-bar[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .heading-bar .navigation-toggler-btn{
+        display: block;
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        aspect-ratio: 1;
+        background-image: url(../shared/icon-hamburger.svg);
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        top: 2rem;
+        right: 2rem;
+        z-index: 100;      
+        transition: all ease-in-out 350ms;  
+    }
+    .heading-bar .navigation-toggler-btn[aria-expanded="true"]{
+        background-image: url(../shared/icon-close.svg);
+    }
+    .heading-bar .active::after,.heading-bar .navigation-bar li a:hover::after{
+        display: none;
+    }
+    .heading-bar .navigation-bar li a{
+        margin: auto 0;
+        margin-left: 1rem;
+    }
+    .home-body{
+        margin-top: 20px;
+    }
+}

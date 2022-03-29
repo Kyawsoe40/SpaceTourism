@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    background-image: url(../destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.destination-body h5{
+    color: #fff;
+    font-size: 25px;
+    float: left;
+}
+.destination-body h5 span{
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    opacity: 25%;
+}
+
+.destination-category{
+    margin: 100px 50px;
+}
+.destination-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+.destination-bar li{
+    list-style: none;
+}
+.destination-bar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+    position: relative;
+}
+.destination-bar li a:hover::after{
+    position: absolute;
+    content: '';
+    width: 102%;
+    height: 3px;
+    background-color: rgba(255,255,255,0.4);
+    top: 3rem;
+    left:-1%;
+
+}
+.destination-bar li a.active:hover::after{
+    background-color: rgba(255,255,255,1);
+}
+.destination-category h2{
+    color: #fff;
+    font-size: 120px;
+    font-weight: 500;
+    text-align: center;
+}
+.destination-category p{
+    color: rgba(255,255,255,0.5);
+    font-size: 18px;
+    line-height: 32px;
+
+    text-align: justify;
+    position: relative;
+    margin-left: 2vw;
+}
+.destination-category p::after{
+    position: absolute;
+    content: '';
+    width: 104%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    bottom: -50%;
+    left:0;
+}
+.destination-time{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+.destination-time h3{
+    font-size: 15px;
+    line-height: 17px;
+    color:#D0D6F9;
+    text-transform: uppercase;
+}
+.destination-time h5{
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+@media (max-width:705px){
+    .destination-body h5{
+        font-size: 20px;
+        text-align: center;
+        float: none;
+    }
+    .destination-body img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .destination-time{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 100px;
+    }
+    .destination-time h5{
+        margin-top:  10px;
+        margin-bottom: 30px;
+    }
+    .destination-bar li a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .destination-category{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+    .destination-category p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .destination-category p::after{
+        width: 99%;
+    }
+}
