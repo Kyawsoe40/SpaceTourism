@@ -1,0 +1,151 @@
+body{
+    background-image: url(../technology/background-technology-desktop.jpg);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.technology-section{
+    margin-top: 80px;
+}
+.technology-section h2{
+    color: #fff;
+    margin-left: 15%;
+    letter-spacing: 4.72px;
+}
+.technology-section h2 span{
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    opacity: 25%;
+}
+.technology-box{
+    display: flex;
+    justify-content: space-evenly;   
+    flex-wrap: nowrap;
+}
+.technology-text-box{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.technology-links ul{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.technology-links ul li{
+    list-style: none;
+    margin-bottom: 35px;
+}
+.technology-links ul li a span{
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    transition: all 350ms;
+}
+.technology-links ul li a span:hover{
+    border-color: #fff;
+}
+.technology-links ul li a span.active-link{
+    background-color: #fff;
+    color: #000;
+}
+.technology-text-box{
+    padding-top: 150px;
+    padding-left: 14%;
+    padding-right: 5%;
+}
+.technology-text h5{
+    font-size: 18px;
+    line-height: 37px;
+    color: #fff;
+    opacity: 50.42%;    
+    text-transform: uppercase;
+}
+.technology-text h3{
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.technology-text p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.technology-img-box{
+    padding: 50px ;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width:991px){
+    body{
+        background-image: url(../technology/background-technology-tablet.jpg);
+    }
+    .technology-box{
+        flex-direction: column;
+    }
+    .technology-img-box{
+        order: 1;
+        background-image: url(../technology/image-launch-vehicle-landscape.jpg);
+        width: 100vw;
+        height: 30vw;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-size: cover;
+        margin-top: 30px;
+    }
+    .technology-text-box{
+        order: 2;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 50px;
+    }
+    .technology-links ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .technology-links ul li{
+        margin-right: 20px;
+    }
+    .technology-links ul li a span{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .technology-text{
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (max-width:704px){
+    body{
+        background-image: url(../technology/background-technology-mobile.jpg);
+    }
+    .technology-links ul li a span{
+        font-size: 16px;
+    }
+    .technology-text h5{
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 2.5px;
+    }
+    .technology-text h3{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .technology-text{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

@@ -97,7 +97,15 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-@media (max-width:705px){
+@media (max-width:991px){
+    body{
+        background-image: url(../destination/background-destination-tablet.jpg);
+    }
+}
+@media (max-width:704px){
+    body{
+        background-image: url(../destination/background-destination-mobile.jpg);
+    }
     .destination-body h5{
         font-size: 20px;
         text-align: center;

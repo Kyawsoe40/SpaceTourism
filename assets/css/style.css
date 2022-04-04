@@ -123,6 +123,19 @@ h5 span{
     font-size: 2vw;
     line-height: 36.67px;
 }
+footer{
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+    margin-top: 50px;
+}
+footer p{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
 @media (min-width:705px){
     .heading-bar .navigation-bar{
         padding-block: 2rem;
@@ -163,6 +176,7 @@ h5 span{
         gap: 2em;
         transform: translateX(100%);
         transition: all ease-in-out 350ms;
+        z-index: 50;
     }
     .navigation-bar[data-visible="true"]{
         transform: translateX(0%);
@@ -184,7 +198,9 @@ h5 span{
     }
     .heading-bar .navigation-toggler-btn[aria-expanded="true"]{
         background-image: url(../shared/icon-close.svg);
-        z-index: 100;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        z-index: 101;
     }
     .heading-bar .active::after,.heading-bar .navigation-bar li a:hover::after{
         display: none;
