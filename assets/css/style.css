@@ -150,7 +150,7 @@ footer p{
     }
     .heading-bar .navigation-bar li a > span[aria-hidden]{
         display: none;
-        }
+    }
     .heading-bar .navigation-bar{
         padding-block: 30px;
         padding-inline: 20px;
